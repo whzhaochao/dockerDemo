@@ -9,6 +9,7 @@ RUN export PATH=/usr/local/bin/apache-maven-3.3.9/bin:$PATH
 RUN ln -s /usr/local/bin/apache-maven-3.3.9/bin/mvn /usr/local/bin/mvn
 #RUN ls -l /usr/local/bin
 RUN echo $PATH
+RUN ll
 
 RUN mvn clean install
 
